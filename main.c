@@ -1,10 +1,12 @@
 #include <stdio.h>
-
-#include <stdio.h>
+#include <locale.h>
 
 #define TAM 100
 
 int main() {
+
+    setlocale(LC_ALL, "Portuguese");
+    
     int encerrar = 0;
     char texto[TAM];
     char texto_criptografado[TAM];
